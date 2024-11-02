@@ -26,7 +26,7 @@ section{
 .preview p{
     margin:7px 0 54px;
 }
-.info1{
+.info{
     display: flex;
     flex-direction: column;
     width: 509px;
@@ -36,6 +36,7 @@ section{
 }
 .reza>img{
     width: 406px;
+    filter:drop-shadow(0px 20px 40px rgba(59, 67, 242, 0.10));
 }
 .preview div nav ul{
     width: 240px;
@@ -301,13 +302,12 @@ input[type="file"]{
     background-size: contain;
     background-repeat: no-repeat;
 }
-.silver ul li:nth-child(n+3):before{
+.silver ul li:nth-child(n+3), .golden ul li:nth-child(n+5){
+    opacity: 0.5;
+}
+.silver ul li:nth-child(n+3):before, .golden ul li:nth-child(n+5):before{
     background-image: url("resources/Close.png");
 }
-.golden ul li:nth-child(n+5):before{
-    background-image: url("resources/Close.png");
-}
-
 .contact {
     margin:100px 0 125px;
     display: flex;
@@ -345,6 +345,8 @@ input[type="file"]{
 }
 .blog>h1{
     margin-bottom:48px;
+    font-size: 48px;
+    font-weight: 600;
 }
 .items>div{
     padding: 15px 15px 57px;
